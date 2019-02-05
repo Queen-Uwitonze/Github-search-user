@@ -1,14 +1,19 @@
-<p>
-  user works!
-</p>
 <div class="container">
-
+  <input class="input-field" type="text" placeholder="Username" [(ngModel)]="userName">
+  <button (click)="submitInput()">Search</button>
   <div class="row">
-    <blockuser class="text-center text-lg">
-      <p>{{data.gravatar_id}}</p>
-      <p>{{data.public_repos}}</p>
-      <footer><cite>{{quote.followers}}</cite></footer>
-      </blockquote>
+    <blockquote>
+      <img src="{{user.avatar_url}}" />
+      <p appStrikethrough>{{user.name}} </p>
+      <p>Repositories:{{user.public_repos}}</p>
+      <p>Followers:{{user.followers}}</p>
+      <p>Following:{{user.following}}</p>
+      <a href="{{user.html_url}}" target="_blank">Link to the github page</a>
+    </blockquote>
   </div>
-
+  <!-- <div class="form-group">
+    <label for="complete">Completion</label>
+    <input type="date" id="complete" required />
+  </div> -->
+  <p>complete in {{user.completeDate|dateCount}} days</p>
 </div>

@@ -6,6 +6,6 @@ import { User } from '../app/user'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Github-search-user';
+  title = 'Github Search App';
 
 }
