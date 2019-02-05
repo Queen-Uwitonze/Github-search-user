@@ -15,7 +15,7 @@ export class UserRequestService {
   userRequest(userName) {
 
     var userInput = userName;
-    //console.log(userInput);
+
 
     interface ApiResponse {
       avatar_url: string,
