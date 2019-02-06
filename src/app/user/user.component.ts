@@ -14,7 +14,7 @@ export class UserComponent implements OnInit {
   submitInput() {
     this.userService.userRequest(this.userName);
   }
-  constructor(private userService: UserRequestService, ) { }
+  constructor(private userService: UserRequestService) { }
 
   ngOnInit() {
     this.user = this.userService.user
