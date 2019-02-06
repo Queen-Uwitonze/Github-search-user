@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserFormComponent } from './user-form/user-form.component';
+//import { UserFormComponent } from './user-form/user-form.component';
 import { UserComponent } from './user/user.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
-    UserFormComponent,
+    //UserFormComponent,
     UserComponent,
     StrikethroughDirective,
     DateCountPipe,
